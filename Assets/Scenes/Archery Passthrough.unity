@@ -3048,6 +3048,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e6312b45d29ea4e9e54432dda544fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
+  objectPrefab: {fileID: 5557652419053731113, guid: 2df42bf2aff0fcc48b7132547d42bddb, type: 3}
+  spawnPoint: {fileID: 456949599}
+  controllerNode: 5
+  spawnCooldown: 1
 --- !u!1 &464914724
 GameObject:
   m_ObjectHideFlags: 0
@@ -4843,6 +4847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bow
       objectReference: {fileID: 0}
+    - target: {fileID: 2589571369817754473, guid: 6c3c0bfa92038bd4aa725e80a43ced1e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5854033015894534605, guid: 6c3c0bfa92038bd4aa725e80a43ced1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5247,6 +5255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 886997502}
+  - component: {fileID: 886997503}
   m_Layer: 0
   m_Name: Ceiling
   m_TagString: Untagged
@@ -5270,6 +5279,22 @@ Transform:
   - {fileID: 2138650235}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &886997503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886997501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e6312b45d29ea4e9e54432dda544fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
+  objectPrefab: {fileID: 6934255311797489788, guid: da6f0ba1991f65743b38f5187ea444df, type: 3}
+  spawnPoint: {fileID: 886997502}
+  controllerNode: 5
+  spawnCooldown: 1
 --- !u!1 &895011359
 GameObject:
   m_ObjectHideFlags: 0
